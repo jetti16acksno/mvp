@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Web App</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<button onclick="showPopup()">Get Started</button>
+
+	<!-- Popup Box -->
+	<div id="popup-box" class="popup">
+		<div class="popup-content">
+			<span class="close" onclick="hidePopup()">&times;</span>
+			<p>I'm A</p>
+			<button onclick="showTravelerPopup()">Traveller</button>
+			<button onclick="showNewCitizenPopup()">New Citizen</button>
+			<button onclick="showLocalPopup()">Local</button>
+		</div>
+	</div>
+
+	<!-- Traveller Popup Box -->
+	<div id="traveller-popup-box" class="popup">
+		<div class="popup-content">
+			<span class="close" onclick="hideTravelerPopup()">&times;</span>
+			<p>I need</p>
+			<input type="checkbox" name="travel" value="Travel">Travel<br>
+			<input type="checkbox" name="stay" value="Stay">Stay<br>
+			<input type="checkbox" name="toilet" value="Toilet">Toilet<br>
+			<input type="checkbox" name="food" value="Food">Food<br>
+		</div>
+	</div>
+
+	<!-- New Citizen Popup Box -->
+	<div id="new-citizen-popup-box" class="popup">
+		<div class="popup-content">
+			<span class="close" onclick="hideNewCitizenPopup()">&times;</span>
+			<p>I need</p>
+			<input type="checkbox" name="house" value="House">House / Flat / Apartment<br>
+			<input type="checkbox" name="shops" value="Shops">Best Shops Near Me<br>
+			<input type="checkbox" name="vehicle" value="Vehicle">Vehicle for Shifting Goods<br>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
